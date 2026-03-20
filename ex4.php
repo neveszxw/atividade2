@@ -14,13 +14,13 @@
 <?php
 if(isset($_POST["n"])){
     $n = $_POST["n"];
-    $i = 1;
-    echo "contagem: ";
+    $i = 10; 
+    echo "Intervalo de 10 até $n: ";
     while($i <= $n) {
         echo $i . " ";
         $i++;
     }
 }
-?>
+?> 
 </body>
 </html>

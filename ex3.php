@@ -14,12 +14,13 @@
 <?php
 if(isset($_POST["n"])){
     $n = $_POST["n"];
+    $soma = 0;
     $i = 1;
-    echo "contagem: ";
     while($i <= $n) {
-        echo $i . " ";
+        $soma += $i;
         $i++;
     }
+    echo "A soma de 1 até $n é: $soma";
 }
 ?>
 </body>

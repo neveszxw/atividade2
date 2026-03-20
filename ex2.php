@@ -15,9 +15,11 @@
 if(isset($_POST["n"])){
     $n = $_POST["n"];
     $i = 1;
-    echo "contagem: ";
+    echo "Números maiores que 5: ";
     while($i <= $n) {
-        echo $i . " ";
+        if($i > 5) {
+            echo $i . " ";
+        }
         $i++;
     }
 }

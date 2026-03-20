@@ -14,11 +14,12 @@
 <?php
 if(isset($_POST["n"])){
     $n = $_POST["n"];
-    $i = 1;
-    echo "contagem: ";
-    while($i <= $n) {
-        echo $i . " ";
-        $i++;
+    if($n > 50) {
+        echo "$n é maior que 50.";
+    } elseif($n < 50) {
+        echo "$n é menor que 50.";
+    } else {
+        echo "O número é igual a 50.";
     }
 }
 ?>

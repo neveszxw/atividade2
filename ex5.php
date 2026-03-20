@@ -15,12 +15,15 @@
 if(isset($_POST["n"])){
     $n = $_POST["n"];
     $i = 1;
-    echo "contagem: ";
+    echo "Conte quantos números são menores que 20.: ";
     while($i <= $n) {
-        echo $i . " ";
+        if($i < 20) {
+            echo $i . " ";
+        }
         $i++;
     }
 }
 ?>
 </body>
 </html>
+
